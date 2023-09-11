@@ -33,6 +33,7 @@ jobs:
         mvn clean test site
         
   empacotar:
+     needs: test
      runs-on: ubuntu-latest
 
      steps:
